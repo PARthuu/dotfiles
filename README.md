@@ -2,19 +2,16 @@
 
 ## Setup
 
-```bash
-ln -s ~/.config/dotfiles/nvim ~/.config/nvim
-ln -s ~/.config/dotfiles/.tmux.conf ~/.tmux.conf
-```
-
-## Tmux
-
-Install TPM (tmux package manager) first.
+Install TPM (Tmux Package Manager)
 
 ```bash
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 ```
 
-## NeoVim
+Clone Config and Setup Symlinks
 
-Nothing needed.
+```bash
+git clone https://github.com/PARthuu/dotfiles.git ~/.config/dotfiles
+ln -s ~/.config/dotfiles/nvim ~/.config/nvim
+ln -s ~/.config/dotfiles/tmux.conf ~/.tmux.conf
+```
