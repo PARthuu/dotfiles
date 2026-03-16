@@ -14,5 +14,4 @@ Clone Config and Setup Symlinks
 git clone https://github.com/PARthuu/dotfiles.git ~/.config/dotfiles
 ln -s ~/.config/dotfiles/nvim ~/.config/nvim
 ln -s ~/.config/dotfiles/tmux.conf ~/.tmux.conf
-ln -s ~/.config/dotfiles/zshrc ~/.zshrc
 ```
