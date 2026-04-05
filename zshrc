@@ -116,8 +116,8 @@ alias vim='nvim'
 alias cds='cd ~/Music/Writings/Songs && vim .'
 alias cda='cd ~/Music/Writings/Album && vim .'
 
-bindkey -v                         # enable vi mode
-bindkey -M viins '^x' vi-cmd-mode  # remap control-x to start vim command mode
+# bindkey -v                         # enable vi mode
+# bindkey -M viins '^x' vi-cmd-mode  # remap control-x to start vim command mode
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 export FZF_DEFAULT_OPTS="--preview 'bat --style=numbers --color=always {}'"
