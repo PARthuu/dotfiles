@@ -6,12 +6,6 @@ vim.api.nvim_create_user_command('GitBlameLine', function()
     print(vim.fn.system { 'git', 'blame', '-L', line_number .. ',+1', filename })
 end, { desc = 'Print the git blame for the current line' })
 
-vim.api.nvim_create_user_command('C', function()
-    local config_dir = vim.fn.stdpath 'config'
-    vim.cmd('cd ' .. config_dir)
-    vim.cmd 'pwd' -- Prints the path to confirm the move
-end, { desc = 'CD into Neovim config directory' })
-
 -- Schedule (Asynchronous execution)
 
 -- Use system clipboard `+` for yank and paste

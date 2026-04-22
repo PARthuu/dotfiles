@@ -62,7 +62,11 @@ vim.keymap.set('n', '=ap', "ma=ap'a", { desc = 'Auto-format paragraph and return
 -- ╰──────────────────────────────────────────────────────────╯
 
 -- cd to the config directory
-vim.keymap.set('n', '<leader>cc', ':C<CR>', { desc = 'CD to Config' })
+vim.keymap.set('n', '<leader>cc', function()
+    vim.cmd('cd ' .. vim.fn.stdpath 'config')
+    vim.cmd 'pwd'
+end, { desc = 'CD to Config' })
+
 -- Toggle back to the last directory
 vim.keymap.set('n', '<leader>cC', ':cd -<CR>:pwd<CR>', { desc = 'CD Back to previous dir' })
 
