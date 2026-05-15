@@ -77,10 +77,10 @@ vim.keymap.set('n', '<leader>k', '<C-w>k', { desc = 'Move to upper window' })
 vim.keymap.set('n', '<leader>l', '<C-w>l', { desc = 'Move to right window' })
 
 -- Terminal & insert mode window navigation
-vim.keymap.set({ 't', 'i' }, '<leader>h', '<C-\\><C-n><C-w>h', { desc = 'Terminal/Insert: Move left' })
-vim.keymap.set({ 't', 'i' }, '<leader>j', '<C-\\><C-n><C-w>j', { desc = 'Terminal/Insert: Move down' })
-vim.keymap.set({ 't', 'i' }, '<leader>k', '<C-\\><C-n><C-w>k', { desc = 'Terminal/Insert: Move up' })
-vim.keymap.set({ 't', 'i' }, '<leader>l', '<C-\\><C-n><C-w>l', { desc = 'Terminal/Insert: Move right' })
+vim.keymap.set({ 't', 'i' }, '<C-h>', '<C-\\><C-n><C-w>h', { desc = 'Terminal/Insert: Move left' })
+vim.keymap.set({ 't', 'i' }, '<C-j>', '<C-\\><C-n><C-w>j', { desc = 'Terminal/Insert: Move down' })
+vim.keymap.set({ 't', 'i' }, '<C-k>', '<C-\\><C-n><C-w>k', { desc = 'Terminal/Insert: Move up' })
+vim.keymap.set({ 't', 'i' }, '<C-l>', '<C-\\><C-n><C-w>l', { desc = 'Terminal/Insert: Move right' })
 
 -- ╭──────────────────────────────────────────────────────────╮
 -- │                  Terminal Mode Mappings                  │
