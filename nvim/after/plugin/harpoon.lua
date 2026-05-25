@@ -5,7 +5,7 @@ harpoon:setup()
 -- REQUIRED
 
 -- Add current file to Harpoon list
-vim.keymap.set('n', '<leader>a', function()
+vim.keymap.set('n', 'M-a', function()
     harpoon:list():add()
 end, { desc = 'Harpoon: Add current file to list' })
 
