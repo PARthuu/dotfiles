@@ -1,3 +1,5 @@
 font-size = 24
 copy-on-select = clipboard
 theme = "TokyoNight Night"
+
+macos-option-as-alt = true
