@@ -4,7 +4,6 @@ local harpoon = require 'harpoon'
 harpoon:setup()
 -- REQUIRED
 
-
 -- Add current file to Harpoon list
 vim.keymap.set('n', '<leader>a', function()
     harpoon:list():add()
