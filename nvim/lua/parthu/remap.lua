@@ -67,6 +67,6 @@ vim.keymap.set('t', '<C-c><C-c>', '<C-\\><C-n>', { desc = 'Exit terminal (altern
 vim.keymap.set('i', '<C-d>', '<Del>', { desc = 'Delete character under cursor (like forward delete)' })
 
 -- Custom
-vim.keymap.set('v', '<leader>a', function()
-    AlignOn(vim.fn.input 'delimiter: ')
-end)
+vim.keymap.set('v', '<leader>fa', function()
+    AlignOn(vim.fn.input '> ')
+end, { desc = '[F]ormat [A]lign delimiter' })
